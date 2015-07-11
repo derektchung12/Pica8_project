@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+}
+
+header{
+	background: white;
+	color: black;
+}
+
+header h1{
+
+}
+
+header ul li{
+	background: white;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0 0 0 15px;
+	color: white;
+}
+
+nav ul li {
+	background: white;
+	color: white;
+	display: inline-block;
+	padding: 5px 15px;
+}
+
+img.logo {
+	max-width: 40px;
+	max-height 50px: 
+}
+
+.darkBG{
+	background: yellow;
+	color: black;
+}
+
+.darkerBG{
+	background: blue;
+	color: white;
+}
+
+.darkestBG{
+	background: black;
+	color: white;
+}
+
+.secondary{
+	background: #333;
+	color: #111;
+
+}
+
+#special{
+	background: black;
+	color: white;
+}
