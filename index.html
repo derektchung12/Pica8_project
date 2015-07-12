@@ -48,93 +48,162 @@
 				</ul>
 			</nav>-->
 		</header>
+		<!-- top nav bar-->
 
-		<header>
-			<nav class="navbar navbar-inverse">
-			  <div class="container-fluid">
-			    <div class="navbar-header">
-			      <a class="navbar-brand" href="#">Controller</a>
-			    </div>
-			    <div>
-			      <ul class="nav navbar-nav navbar-right">
-			        <li><a href="#"><span class="glyphicon glyphicon-search"></span> Search</a></li>
-			      </ul>
-			    </div>
-			  </div>
-			</nav>
-		</header>
-
-
-
+<!---create wrap here-->
 
 		<div class="container-fluid">
-			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-			  <div class="panel panel-default">
-			    <div class="panel-heading" role="tab" id="headingOne">
-			      <h4 class="panel-title">
-			        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			          Site
-			        </a>
-			      </h4>
-			    </div>
+			<div class="row">
+				<!--Tree-->
+				<div class = "col-md-4">
+				<!--http://bootsnipp.com/snippets/featured/collapsible-tree-menu-->
+					<div class="container-fluid">
+						<div class="row">
+					        <div class="well">
+					            <div style="overflow-y: scroll; overflow-x: hidden; height: 100%;">
+					                <ul class="nav nav-list">
+					                    <li><label class="tree-toggler nav-header">Verizon SDN Wan</label>
+					                        <ul class="nav nav-list tree">
+					                            <li><label class="tree-toggler nav-header">DC1</label>
+					                                <ul class="nav nav-list tree">
+					                                    <li><a href="#">Forwarding Box</a></li>
+					                                    <li><label class="tree-toggler nav-header">Controller</label>
+					                                        <ul class="nav nav-list tree">
+					                                            <li><a href="#">ctrl1</a></li>
+					                                        </ul>
+					                                    </li>
+					                                    <li><a href="#">SDR</a></li>
+					                                </ul>
+					                            </li>
+					                            <li><label class="tree-toggler nav-header">DC2</label>
+					                                <ul class="nav nav-list tree">
+					                                    <li><a href="#">Forwarding Box</a></li>
+					                                    <li><label class="tree-toggler nav-header">Controller</label>
+					                                        <ul class="nav nav-list tree">
+					                                            <li><a href="#">ctrl1</a></li>
+					                                        </ul>
+					                                    </li>
+					                                    <li><a href="#">SDR</a></li>
+					                                </ul>
+					                            </li>
 
-			    <div class="container-fluid">
-				    <ul class="nav nav-pills">
-					  <li role="presentation" class="active"><a href="#">Edit</a></li>
-					  <li role="presentation"><a href="#">Delete</a></li>
-					  <li role="presentation"><a href="#">Save</a></li>
-					  <li role="presentation"><a href="#">Apply</a></li>
-					</ul>
+					                        </ul>
+					                    </li>
+					                </ul>
+					            </div>
+					        </div>
+						</div>
+					</div>
 				</div>
+				<!--Tree-->
 
-				<div class="container-fluid">
-				    <table class="table table-bordered">
-				    	<tr>
-						    <th>Name</th>
-						    <th>Location</th>		
-						    <th>Description</th>
-						</tr>
-						<tr>
-							<td>DC1</td>
-							<td>1032</td>
-							<td>RTM Testsite</td>
-						</tr>
-					</table>
+
+
+
+
+
+
+
+				<div class = "col-md-8">
+				<!--Controller Navbar-->
+					<div class = "container-fluid">
+						<header>
+							<nav class="navbar navbar-inverse">
+							  <div class="container-fluid">
+							    <div class="navbar-header">
+							      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>                        
+							      </button>
+							      <a class="navbar-brand" href="#">Controller</a>
+							    </div>
+							    <div class="collapse navbar-collapse" id="myNavbar">
+							      <ul class="nav navbar-nav navbar-right">
+							        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+							        <li><a href="#"><span class="glyphicon glyphicon-align-justify"></span></a></li>
+							      </ul>
+							    </div>
+							  </div>
+							</nav>
+						</header>
+
+
+
+						<!--Accordian -->
+						<div class="container-fluid">
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							  <div class="panel panel-default">
+							    <div class="panel-heading" role="tab" id="headingOne">
+							      <h4 class="panel-title">
+							        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							          <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a> Site
+							        </a>
+							      </h4>
+							    </div>
+
+							    <div class="container-fluid">
+								    <ul class="nav nav-pills">
+									  <li role="presentation" class="active"><a href="#">Edit</a></li>
+									  <li role="presentation"><a href="#">Delete</a></li>
+									  <li role="presentation"><a href="#">Save</a></li>
+									  <li role="presentation"><a href="#">Apply</a></li>
+									</ul>
+								</div>
+
+								<div class="container-fluid">
+								    <table class="table table-bordered">
+								    	<tr>
+										    <th>Name</th>
+										    <th>Location</th>		
+										    <th>Description</th>
+										</tr>
+										<tr>
+											<td>DC1</td>
+											<td>1032</td>
+											<td>RTM Testsite</td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							  <div class="panel panel-default">
+							    <div class="panel-heading" role="tab" id="headingTwo">
+							      <h4 class="panel-title">
+							        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							         	<a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>Open Flow configuration
+							        </a>
+							      </h4>
+							    </div>
+							    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+							      	<ul class="nav nav-pills">
+									  <li role="presentation" class="active"><a href="#">Edit</a></li>
+									  <li role="presentation"><a href="#">Delete</a></li>
+									  <li role="presentation"><a href="#">Save</a></li>
+									  <li role="presentation"><a href="#">Apply</a></li>
+									</ul>
+
+								    <table class="table table-bordered">
+								    	<tr>
+										    <th>Name</th>
+										    <th>Location</th>		
+										    <th>Description</th>
+										</tr>
+										<tr>
+											<td>DC1</td>
+											<td>1032</td>
+											<td>RTM Testsite</td>
+										</tr>
+									</table>
+								  </div>
+								</div>
+							</div>
+						</div><!--container-->
+						<!--Accordian-->
+					</div> <!--container combining the two pages-->
 				</div>
-			  </div>
-			  <div class="panel panel-default">
-			    <div class="panel-heading" role="tab" id="headingTwo">
-			      <h4 class="panel-title">
-			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			          Open Flow configuration
-			        </a>
-			      </h4>
-			    </div>
-			    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-			      	<ul class="nav nav-pills">
-					  <li role="presentation" class="active"><a href="#">Edit</a></li>
-					  <li role="presentation"><a href="#">Delete</a></li>
-					  <li role="presentation"><a href="#">Save</a></li>
-					  <li role="presentation"><a href="#">Apply</a></li>
-					</ul>
+			</div><!--row-->
+		</div><!--container-->
 
-				    <table class="table table-bordered">
-				    	<tr>
-						    <th>Name</th>
-						    <th>Location</th>		
-						    <th>Description</th>
-						</tr>
-						<tr>
-							<td>DC1</td>
-							<td>1032</td>
-							<td>RTM Testsite</td>
-						</tr>
-					</table>
-			  </div>
-			    </div>
-			  </div>
-			</div>
-		</div> <!--container-->
 
 
 

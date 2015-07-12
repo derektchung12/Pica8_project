@@ -1,19 +1,15 @@
-body {
+/*body {
 	margin: 0;
 }
 
 header{
-	background: white;
-	color: black;
 }
 
 header h1{
 
 }
 
-header ul li{
-	background: white;
-}
+header ul li{}
 
 nav ul{
 	margin: 0;
@@ -22,8 +18,7 @@ nav ul{
 }
 
 nav ul li {
-	background: white;
-	color: white;
+
 	display: inline-block;
 	padding: 5px 15px;
 }
@@ -57,4 +52,4 @@ img.logo {
 #special{
 	background: black;
 	color: white;
-}
+}*/
