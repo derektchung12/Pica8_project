@@ -24,7 +24,6 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a class="navbar-brand" href="#">Brand</a>
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,7 +58,7 @@
 				<!--http://bootsnipp.com/snippets/featured/collapsible-tree-menu-->
 					<div class="container-fluid">
 						<div class="row">
-					        <div class="well">
+					        <div class="well" style="width:300px; padding: 8px 0;">
 					            <div style="overflow-y: scroll; overflow-x: hidden; height: 100%;">
 					                <ul class="nav nav-list">
 					                    <li><label class="tree-toggler nav-header">Verizon SDN Wan</label>
@@ -132,12 +131,83 @@
 
 						<!--Accordian -->
 						<div class="container-fluid">
-							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="bs-example">
+							    <div class="panel-group" id="accordion">
+							        <div class="panel panel-default">
+							            <div class="panel-heading">
+							                <h4 class="panel-title">
+							                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-chevron-right"></span>Site</a>
+							                </h4>
+							            </div>
+							            <div id="collapseOne" class="panel-collapse collapse in">
+							                <div class="panel-body">
+							                    <div class="container-fluid">
+												    <ul class="nav nav-pills">
+													  <li role="presentation" class="active"><a href="#">Edit</a></li>
+													  <li role="presentation"><a href="#">Delete</a></li>
+													  <li role="presentation"><a href="#">Save</a></li>
+													  <li role="presentation"><a href="#">Apply</a></li>
+													</ul>
+												</div>
+												<div class="container-fluid">
+												    <table class="table table-bordered">
+												    	<tr>
+														    <th>Name</th>
+														    <th>Location</th>		
+														    <th>Description</th>
+														</tr>
+														<tr>
+															<td>DC1</td>
+															<td>1032</td>
+															<td>RTM Testsite</td>
+														</tr>
+													</table>
+												</div>
+							                </div><!--panel body-->
+							            </div>
+							        </div>
+							        <div class="panel panel-default">
+							            <div class="panel-heading">
+							                <h4 class="panel-title">
+							                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-chevron-right"></span>Open Flow Configuration</a>
+							                </h4>
+							            </div>
+							            <div id="collapseTwo" class="panel-collapse collapse">
+							                <div class="panel-body">
+							                    <div class="container-fluid">
+												    <ul class="nav nav-pills">
+													  <li role="presentation" class="active"><a href="#">Edit</a></li>
+													  <li role="presentation"><a href="#">Delete</a></li>
+													  <li role="presentation"><a href="#">Save</a></li>
+													  <li role="presentation"><a href="#">Apply</a></li>
+													</ul>
+												</div>
+												<div class="container-fluid">
+												    <table class="table table-bordered">
+												    	<tr>
+														    <th>Name</th>
+														    <th>Location</th>		
+														    <th>Description</th>
+														</tr>
+														<tr>
+															<td>DC1</td>
+															<td>1032</td>
+															<td>RTM Testsite</td>
+														</tr>
+													</table>
+												</div>
+							                </div>
+							            </div>
+							        </div>
+							    </div>
+							</div>
+
+							<!--<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 							  <div class="panel panel-default">
 							    <div class="panel-heading" role="tab" id="headingOne">
 							      <h4 class="panel-title">
 							        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							          <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a> Site
+							          <a href="#" ><span class="glyphicon glyphicon-chevron-right"></span>Site</a>
 							        </a>
 							      </h4>
 							    </div>
@@ -196,7 +266,7 @@
 									</table>
 								  </div>
 								</div>
-							</div>
+							</div>-->
 						</div><!--container-->
 						<!--Accordian-->
 					</div> <!--container combining the two pages-->
@@ -225,6 +295,13 @@
 -->
 
 		<footer>c2015 Derek's Pica8</footer>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <!--<script src="js/bootstrap.min.js"></script>-->
+
+	    <script src="scripts/index.js"></script>
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
