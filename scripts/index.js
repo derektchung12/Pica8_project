@@ -16,6 +16,11 @@ $(document).ready(function () {
 		});
     });
 
+    $('#ip2button').click(function () {
+        $.get("http://localhost:8080/view/setIp2", function(data) {
+            alert(data);
+        });
+    });
 
 	/*function myFunction() {
     var x = document.getElementById("frm1");
