@@ -27,7 +27,9 @@ func loadPage(title string) (*Page, error) {
 
 func viewHandler(w http.ResponseWriter, r *http.Request) {
 	title := r.URL.Path[len("/view/"):]
+	//fmt.Println(title)
 	p, _ := loadPage(title)
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	fmt.Fprintf(w, "<h1>%s</h1><div>%s</div>", p.Title, p.Body)
 }
 
