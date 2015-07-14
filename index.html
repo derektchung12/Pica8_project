@@ -16,11 +16,11 @@
 
 
 
-
+		<!--
 
 		<button id="firstbutton" type="button" class="btn btn-default">First Button</button>
 
-		<form action="demo_form.asp">
+		<form id="responseForm" action="demo_form.asp">
 			IP Address: <input id = "ipAddressForm" type="text" name="IPaddress">
 			<button id="ip1button" type="button" class="btn btn-default">Set</button><br>
 			IP Address: <input id = "ipAddressForm2" type="text" name="IPAddress2">
@@ -28,6 +28,7 @@
 		</form>
 
 		<p id="sum"></p>
+	-->
 
 
 
@@ -162,24 +163,43 @@
 							                <div class="panel-body">
 							                    <div class="container-fluid">
 												    <ul class="nav nav-pills">
-													  <li role="presentation" class="active"><a href="#">Edit</a></li>
+													  <li role="presentation"><a href="#">Edit</a></li>
 													  <li role="presentation"><a href="#">Delete</a></li>
 													  <li role="presentation"><a href="#">Save</a></li>
 													  <li role="presentation"><a href="#">Apply</a></li>
 													</ul>
 												</div>
 												<div class="container-fluid">
-												    <table class="table table-bordered">
+												    <table id = "SiteTable" class="table table-bordered">
 												    	<tr>
-														    <th>Name</th>
-														    <th>Location</th>		
-														    <th>Description</th>
+														    <th>IP Address 1</th>
+														    <th>IP Address 2</th>		
+														    <th>IP concatonation</th>
+														    <th></th>
 														</tr>
 														<tr>
-															<td>DC1</td>
-															<td>1032</td>
-															<td>RTM Testsite</td>
+															<th><input id = "ipAddressForm" type="text" name="IPaddress"></th>
+															<th><input id = "ipAddressForm2" type="text" name="IPAddress2"></th>
+															<th id="sum"></th>
+															<th><button id="firstbutton" type="button" class="btn btn-default">Add concatonation</button></th>
 														</tr>
+
+															<!--
+
+																	<button id="firstbutton" type="button" class="btn btn-default">First Button</button>
+
+																	<form id="responseForm" action="demo_form.asp">
+																		IP Address: <input id = "ipAddressForm" type="text" name="IPaddress">
+																		<button id="ip1button" type="button" class="btn btn-default">Set</button><br>
+																		IP Address: <input id = "ipAddressForm2" type="text" name="IPAddress2">
+																		<button id="ip2button" type="button" class="btn btn-default">Set</button><br>
+																	</form>	
+
+		<p id="sum"></p>
+
+
+
+														-->
 													</table>
 												</div>
 							                </div><!--panel body-->
@@ -195,7 +215,7 @@
 							                <div class="panel-body">
 							                    <div class="container-fluid">
 												    <ul class="nav nav-pills">
-													  <li role="presentation" class="active"><a href="#">Edit</a></li>
+													  <li role="presentation"><a href="#">Edit</a></li>
 													  <li role="presentation"><a href="#">Delete</a></li>
 													  <li role="presentation"><a href="#">Save</a></li>
 													  <li role="presentation"><a href="#">Apply</a></li>

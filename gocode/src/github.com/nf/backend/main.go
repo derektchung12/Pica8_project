@@ -26,6 +26,11 @@ func loadPage(title string) (*Page, error) {
 	return &Page{Title: title, Body: body}, nil
 }*/
 
+var ip1 string
+var ip2 string
+
+
+
 func viewHandler(w http.ResponseWriter, r *http.Request) {
 	command := r.URL.Path[len("/view/"):]
 	
@@ -49,15 +54,43 @@ func viewHandler(w http.ResponseWriter, r *http.Request) {
 
 	switch command {
 	    case "setIp1":
-	    	fmt.Fprintf(w, "setIp1")
+	    	setIp1(w,r)
+	    	//fmt.Fprintf(w, "setIp1")
+
 	    case "setIp2":
-	    	fmt.Fprintf(w, "setIp2")
+	    	setIp2(w,r)
+	    	//fmt.Fprintf(w, "setIp2")
 	    case "sumIp":
-	    	fmt.Fprintf(w, "sumIp")
+	    	sumIp(w,r)
+	    	//fmt.Fprintf(w, "sumIp")
 	    default:
 	        fmt.Fprintf(w, "error has occurred")
     }
 }
+
+func setIp1(w http.ResponseWriter, r *http.Request){
+    r.ParseForm()
+    //fmt.Println(r.Form)
+    //fmt.Println(r.FormValue("ip1value"))
+
+    ip1 = r.FormValue("ip1value")
+
+    //ip1 = "setIP1"
+    fmt.Fprintf(w, ip1)
+}
+
+func setIp2(w http.ResponseWriter, r *http.Request){
+	r.ParseForm()
+	ip2 = r.FormValue("ip1value")
+	fmt.Fprintf(w, ip2)
+}
+
+func sumIp(w http.ResponseWriter, r *http.Request){
+	var stringsum string= ip1+ip2
+	fmt.Fprintf(w, stringsum) 
+}
+
+
 
 func main() {
 	http.HandleFunc("/view/", viewHandler)
