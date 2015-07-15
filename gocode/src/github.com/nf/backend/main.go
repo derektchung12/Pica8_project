@@ -75,6 +75,7 @@ func setIp1(w http.ResponseWriter, r *http.Request){
 
     ip1 = r.FormValue("ip1value")
 
+    ip1 +=".1"
     //ip1 = "setIP1"
     fmt.Fprintf(w, ip1)
 }
@@ -82,6 +83,7 @@ func setIp1(w http.ResponseWriter, r *http.Request){
 func setIp2(w http.ResponseWriter, r *http.Request){
 	r.ParseForm()
 	ip2 = r.FormValue("ip1value")
+	ip2 += ".1"
 	fmt.Fprintf(w, ip2)
 }
 

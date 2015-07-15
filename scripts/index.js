@@ -12,24 +12,27 @@ $(document).ready(function () {
         var ip2 = document.getElementById("ipAddressForm2").value;
         var sum = null;
 
-        $.post("http://localhost:8080/view/setIp1", {ip1value: ip1}, function(data){
-            //alert(data)
-        });
-        //alert(ip1)
-
-        $.post("http://localhost:8080/view/setIp2", {ip1value: ip2}, function(data){
-            //alert(data)
-        });
+        
 
         var table = document.getElementById("SiteTable")
         var row = table.insertRow(1);
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
-        cell1.innerHTML = ip1;
-        cell2.innerHTML = ip2;
+        
+        
+        
         //cell3.innerHTML = sum;
+        $.post("http://localhost:8080/view/setIp1", {ip1value: ip1}, function(data){
+            //alert(data)
+            cell1.innerHTML = data;
+        });
+        //alert(ip1)
 
+        $.post("http://localhost:8080/view/setIp2", {ip1value: ip2}, function(data){
+            //alert(data)
+            cell2.innerHTML = data;
+        });
         $.get("http://localhost:8080/view/sumIp", function(data) {
     			//document.getElementById("sum").innerHTML = data;
             cell3.innerHTML = data;
